@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomoki & Friends - Ticking Timer</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="assets/tomoki-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+		<label>
+			<input type="checkbox">
+			<span class="menu"> <span class="hamburger"></span> </span>
+			<ul>
+			  <li> <a href="#">Home</a> </li>
+			  <li> <a href="#">About</a> </li>
+			  <li> <a href="#">Contact</a> </li>
+			</ul>
+			</label>
+	</div>
+  
+    <div class="title">
+		<!-- <span class="wiggle"><img src="assets/division.png" alt="TOMOKI & Friends"></span> -->
+		<img src="assets/tomoki-timer.png" alt="TOMOKI and friends header">
+        <span class="wiggle"><img src="assets/tomoki-arrow.png" alt="multiplication symbol"></span>
+    </div>
+
+    <div class="timer">
+        <div class="timer__controls">
+          <button data-time="20" class="timer__button-1">STRETCH</button>
+          <button data-time="300" class="timer__button-2">BATHROOM BREAK</button>
+          <button data-time="900" class="timer__button-3">CLEAN UP</button>
+          <button data-time="1200" class="timer__button-4">SNACK TIME</button>
+          <button data-time="3600" class="timer__button-5">NAP TIME</button>
+          <form name="customForm" id="custom">
+            <input type="text" name="minutes" placeholder="ENTER MINUTES ">
+          </form>
+        </div>
+        <div class="display">
+          <h1 class="display__time-left"></h1>
+          <p class="display__end-time"></p>
+        </div>
+
+        <div class="help">
+                <img src="assets/timer-help.png" alt="TOMOKI and friends ticking timer instructions">
+              
+            <p>Press the buttons to set the timer or<br> enter your own minutes.</p>
+            <br>
+
+            <ul>
+                <li><font color="#9A7FF1">20 SECOND</font><br>stretch break</li>
+                <li><font color="#FCA000">5 MINUTE</font> bathroom break</li>
+                <li><font color="#FF2727">15 MINUTE</font><br>clean up time</li>
+                <li><font color="#2784FF">20 MINUTE</font><br>snack time</li>
+                <li><font color="#7AC70C">1 HOUR</font><br> nap time</li>
+                <li>Enter your own time!</li>
+              </ul>
+        </div>
+
+        <div class="footer">
+          <p>Built <a href="https://www.youtube.com/watch?v=8sJlnTMOpGM" target="_blank"><b>From Florida With </b></a>
+            <span class="pulse">🖤</span> by <a href="https://www.linkedin.com/in/gsmichel/" target="_blank"> <b>Gaelle</b></a><br>
+            © 2023. mchldsgn. All Rights Reserved.</p>
+      </div>
+
+        <audio id="alarm_audio"></audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
